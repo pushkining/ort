@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(252, 244, 244);
+}
+
+.navbar {
+    padding-bottom: 0;
+}
+
+.container, .nav {
+    background-color: white;
+
+}
+
+.fashion {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 75% 25%;
+    grid-gap: 15px;
+    grid-template-areas: "pi pi pi"
+                         "bags watch shoe";
+}
+
+.presentation-items {
+    grid-area: pi;
+}
+
+.handbags {
+    grid-area: bags;
+}
+
+.watch {
+    grid-area: watch;
+}
+
+.shoes {
+    grid-area: shoe;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.call {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
