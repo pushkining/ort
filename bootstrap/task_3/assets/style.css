@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+}
+
+img {
+    width: 100px;
+}
+
+.progress {
+    padding: 120px;
+}
+
+.subcontainer {
+    background: rgb(219, 219, 217);
+}
+
+.contibutions, .visit-card, .thumbnail {
+    background: #fff;
+}
+
+ .visit-card {
+    border: 1px solid rgb(194, 189, 189);
+}
+/*
+.wrapper-progress {
+    border: 1px solid  rgb(194, 189, 189);
+}
+
+.block-1 {
+    border: solid 1px;
+}
+
+.subcontainer {
+    border: solid 1px;
+} */
+
+.contibutions {
+    width: calc(100%/3);
+    border: 1px solid  rgb(194, 189, 189);
+}
+
+.visit-card {
+    width: 300px;
+}
+
+.thumbnail {
+    border: 1px solid rgb(194, 189, 189);
+}
+
+a {
+    font-size: 20px;
+}
