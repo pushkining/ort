@@ -1,9 +1,9 @@
 
 let weight = +prompt('Введите свою массу в килограммах');
-let heigt = +prompt('Введите свой рост в метрах');
+let height = +prompt('Введите свой рост в метрах');
 
-let index = weight / (heigt **2);
-console.log(index);
+let index = weight / (height **2);
+console.log(`Индекс массы тела: ${index.toFixed(2)} кг/м2`);
 
 if (index <= 16) {
     console.log('Выраженный дефицит массы тела')
