@@ -17,19 +17,21 @@
     <div class='row row-cols-1 row-cols-lg-4 my-4'>
       <div class="mb-3">
         <label for="heightInput" class="form-label">Рост</label>
-        <input type="number" class="form-control" id="heightInput" min="0.3" max="2.72" value="1.7" step='0.01'>       
+        <input oninput="imt()" type="number" class="form-control" id="heightInput" min="0.3" max="2.72" value="1.7" step='0.01'>       
       </div>
       <div class="mb-3 form-check">
-        <input type="checkbox" class='d-block mt-4' style='width:32px;height:32px;'id="capCheck">
+        <input oninput="imt()" type="checkbox" class='d-block mt-4' style='width:32px;height:32px;'id="capCheck">
         <label class="form-check-label" for="exampleCheck1">в см</label>
       </div>
       <div class="mb-3">
         <label for="weightInput" class="form-label">Масса</label>
-        <input type="number" class="form-control" id="weightInput" min="3" max="400" value="50" step='1'>
+        <input oninput="imt()" type="number" class="form-control" id="weightInput" min="3" max="400" value="50" step='1'>
       </div>
       
       <button type="submit" class="btn btn-primary w-100" onclick="imt()">Submit</button>
     </div>
+    <h3 class="">Ваш индекс: <output id="indexOutput"></output> кг/м2</h3>
+    <h3 class=""><output id="rateInd"></output></h3>
 
   </div>
 </body>
