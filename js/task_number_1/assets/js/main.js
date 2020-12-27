@@ -6,7 +6,7 @@ secret *= 100;
 secret = Math.floor(secret) + 1;
 let playerTry = 10;
 let isUserWin = false;
-// console.log(secret);
+ //console.log(secret);
 
 function start() {
     let startGame = document.querySelector('.start-game');
@@ -23,6 +23,8 @@ function guess() {
     if (playerNum == secret) {
         resultModal.show();
         resultOutput.innerHTML = "Вы угадали";
+        resultModal.classList.remove('alert-danger');
+        resultModal.classList.add('alert-success');
         numberOutput.style.display = 'none';
         isUserWin = true;
         guessBtn.style.display = 'none';
@@ -33,9 +35,19 @@ function guess() {
     }
     if(playerTry <= 0) {
         resultModal.show();
-        resultOutput.innerHTML = `Game over!!!! Число было ${secret}`;
+        resultOutput.innerHTML = `Game over!!!  Число было ${secret}`;
         guessBtn.style.display = 'none';
         numberOutput.style.display = 'none';
     }
     //console.log(isUserWin);
+}
+
+function valueNum() {
+    let a = numberInput.value;
+    console.log(a);
+    numberOutInput.innerHTML = a;
+}
+
+function startAgain() {
+    window.location.reload();
 }
